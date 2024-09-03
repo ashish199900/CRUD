@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN CRUD with jQuery</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/index.css">
+    
+</head>
+<body>
+    <h1>Items</h1>
+    <form id="itemForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="contact" placeholder="Contact" required>
+        <button type="button" id="addItem">Add Item</button>
+    </form>
+
+    <table id="itemsTable" class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="itemsList">
+            <!-- Sample Data -->
+            <tr id="item-1">
+                <td>John Doe</td>
+                <td>john.doe@example.com</td>
+                <td>123-456-7890</td>
+                <td>
+                    <button onclick="viewItem('1')">View</button>
+                    <button onclick="editItem('1')">Edit</button>
+                    <button onclick="deleteItem('1')">Delete</button>
+                </td>
+            </tr>
+            <tr id="item-2">
+                <td>Jane Smith</td>
+                <td>jane.smith@example.com</td>
+                <td>987-654-3210</td>
+                <td>
+                    <button onclick="viewItem('2')">View</button>
+                    <button onclick="editItem('2')">Edit</button>
+                    <button onclick="deleteItem('2')">Delete</button>
+                </td>
+            </tr>
+            <tr id="item-3">
+                <td>Emily Johnson</td>
+                <td>emily.johnson@example.com</td>
+                <td>555-123-4567</td>
+                <td>
+                    <button onclick="viewItem('3')">View</button>
+                    <button onclick="editItem('3')">Edit</button>
+                    <button onclick="deleteItem('3')">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+  
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./static/index.js"></script>

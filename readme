@@ -1,0 +1,28 @@
+Item Management System
+This project is a web-based item management system that allows users to Create, Read, Update, and Delete items. It utilizes jQuery and AJAX for client-side interactions and connects to a server-side API for data operations.
+
+Technologies Used
+    Front-end: HTML, CSS, jQuery
+    Back-end: Node.js, Express.js
+    Database: MongoDB
+
+Setup
+    *Modify for your MongoDB 
+        const connectionString = 'mongodb://localhost:27017/mydatabase'; // Replace with your database connection string
+
+    *Make Collection of Persons Data
+        Sample data
+        [
+            {
+                "_id": "64f9c31b9d3f5c4b8d4e9a1a",
+                "name": "Vivaan Gupta",
+                "email": "vivaan.gupta@example.com",
+                "contact": "1234567890"
+            },
+            {
+                "_id": "64f9c31b9d3f5c4b8d4e9a1b",
+                "name": "Aisha Khan",
+                "email": "aisha.khan@example.com",
+                "contact": "9876543210"
+            }
+        ]
